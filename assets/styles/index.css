@@ -1,0 +1,93 @@
+:root {
+    --primary: #0d42b5;
+    --light-primary: 	#497bd9;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.logo_wrapper {
+    border: 1px dashed var(--primary);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    letter-spacing: 5px;
+    background-color: var(--light-primary);
+    color: #fff;
+}
+
+.nav_item{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.flex_container {
+    display: flex;
+}
+
+.justifier_navbar {
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: #ccc;
+    padding: 20px;
+}
+
+.banner {
+    background-color: #e7e7e7;
+}
+
+.banner-container {
+ align-items: center;
+ margin: auto;
+ padding: 40px 0;
+ max-width: 800px;
+}
+
+.info {
+
+}
+
+.profile-image {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: url('../images/profile-picture.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.primary-button {
+    cursor: pointer;
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--primary);
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px 2px var(--light-primary);
+    transition: all 0.5s;
+}
+
+.primary-button:hover{
+    padding: 18px;
+}
+
+.what-i-do {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
