@@ -9,11 +9,26 @@
 body, html {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 a{
     text-decoration: none;
     color: var(--primary);
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
 }
 
 .logo_wrapper {
@@ -42,6 +57,9 @@ a{
 .navbar {
     background-color: #ccc;
     padding: 20px;
+    position: sticky;
+    z-index:999999999;
+    top: 0;
 }
 
 .banner {
@@ -85,9 +103,55 @@ a{
     padding: 18px;
 }
 
+.divider {
+    height: 2px;
+    background-color: #e7e7e7;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
 .what-i-do {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.rounded-card {
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px 4px #e7e7e7;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.rounded-card:hover {
+    background-color: #e7e7e7;
+}
+
+.projects {
     max-width: 800px;
     margin: auto;
     text-align: center;
     padding: 20px;
+}
+
+.have-in-mind {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 50px 30px;
+}
+
+.contact-image {
+    background: url(../images/contact-me.jpg);
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+}
+
+.contact-form {
+    width: 500px;
 }

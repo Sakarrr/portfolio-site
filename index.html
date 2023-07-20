@@ -5,6 +5,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
         <link rel="stylesheet" href="./assets/styles/index.css" />
 
         <title>Sakar Shrestha's Portfolio</title>
@@ -15,8 +17,8 @@
             <div class="logo_wrapper"> SAKAR </div>
             <div class="links flex_container" style="gap: 20px;">
                 <div class="nav_item"><a href="#"> Home </a></div>
-                <div class="nav_item"><a href="#"> Skills </a></div>
-                <div class="nav_item"><a href="#"> Contact </a></div>
+                <div class="nav_item"><a href="#services-container"> Services </a></div>
+                <div class="nav_item"><a href="#contact-us-container"> Contact </a></div>
             </div>
         </div>
 
@@ -35,7 +37,7 @@
                 </div>
 
                 <div>
-                    <button class="primary-button"> Contact Me</button>
+                    <a href="#contact-us-container"><button class="primary-button"> Contact Me</button></a>
                 </div>
             </div>
             <div>
@@ -45,8 +47,112 @@
         </div>
         </div>
 
-        <div class="what-i-do">
+        <div class="divider"></div>
+
+        <div id="services-container" class="what-i-do">
             <div style="font-size: 25px; font-weight: bold;"> What I Do?</div>
+
+            <div class="flex_container" style="justify-content: center; margin-top: 20px;">
+                <div class="rounded-card" style="width: 35%;">
+                    <i class="fa-solid fa-code fa-flip" style="font-size: 60px; color: var(--light-primary);"></i>
+
+                    <div style="font-size: 20px; font-weight: bold; margin: 10px 0;"> WordPress Development </div>
+
+                    <div style="font-size: 13px; line-height: 20px;"> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur placerat metus, vel venenatis lorem hendrerit id. 
+                        Nullam non odio eu dolor elementum finibus id vel turpis. 
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="divider"></div>
+
+        <div class="projects">
+            <div style="font-size: 25px; font-weight: bold;"> Projects!</div>
+
+            <div class="flex_container" style="justify-content: center; gap: 30px; margin-top: 20px;">
+                <div class="rounded-card" style="width: 35%;">
+                   <div style="font-size: 20px; font-weight: bold; margin: 10px 0;"> ColorMag </div>
+
+                    <div style="font-size: 13px; line-height: 20px;"> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur placerat metus, vel venenatis lorem hendrerit id. 
+                        Nullam non odio eu dolor elementum finibus id vel turpis. 
+                    </div>
+                </div>
+                <div class="rounded-card" style="width: 35%;">
+                   <div style="font-size: 20px; font-weight: bold; margin: 10px 0;"> MagazineX </div>
+
+                    <div style="font-size: 13px; line-height: 20px;"> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur placerat metus, vel venenatis lorem hendrerit id. 
+                        Nullam non odio eu dolor elementum finibus id vel turpis. 
+                    </div>
+                </div>
+                <div class="rounded-card" style="width: 35%;">
+                    <div style="font-size: 20px; font-weight: bold; margin: 10px 0;"> Magazine Blocks </div>
+
+                    <div style="font-size: 13px; line-height: 20px;"> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur placerat metus, vel venenatis lorem hendrerit id. 
+                        Nullam non odio eu dolor elementum finibus id vel turpis. 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="have-in-mind">
+            <div style="font-size: 25px; font-weight: bold; text-align: center;">
+
+                Have any projects in mind? <br/>
+
+                <a href="mailto: ctha.sakar@outlook.com"><button class="primary-button" style="background-color: #fff; color: var(--primary); box-shadow: none; width: 200px;"> Call Me!</button></a>
+
+            </div>
+        </div>  <!-- have-in-mind -->
+
+        <div id="contact-us-container" contact-us-container" style="max-width: 900px; margin: auto; margin-top: 20px; margin-bottom: 20px;">
+            <div class="flex_container" style="justify-content: space-between;">
+                <div class="contact-image">
+                    <!-- <img src="./assets/images/contact-me.jpg" /> -->
+                </div>
+
+                <div class="contact-form">
+                    <div style="font-size: 30px; font-weight: bold; margin-bottom: 20px;"> Contact Me: </div>
+
+                    <form action="./index.html" method="get">
+                        <table>
+                            <tr>
+                                <td>Your Name:</td> 
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="name" placeholder="Enter Your Name" /></td>
+                            </tr>
+
+                            <tr>
+                                <td>Mobile No:</td> 
+                            <tr>
+
+                            </tr>
+                                <td><input type="number" name="mobile_no" placeholder="Enter Your Mobile Number" /></td>
+                            </tr>
+
+                            <tr>
+                                <td>Message</td>
+                             <tr>
+
+                            </tr>
+                                <td> <textarea name="message" placeholder="Enter Your Message Here" > </textarea></td>
+                            </tr>
+                            <tr>
+                                <td> <button type="submit" class="primary-button"> Send Message</button> </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+
+        </div> <!-- contact-us-container -->
+
     </body>
 </html>
