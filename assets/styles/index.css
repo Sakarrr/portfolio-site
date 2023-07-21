@@ -69,14 +69,17 @@ textarea {
 }
 
 .intro-text {
-    font-size: 14px; line-height: 20px; color: #434343;
+    font-size: 14px;
+     line-height: 20px;
+      color: #434343;
+      width: 85%;
 }
 
 .banner-container {
  align-items: center;
  margin: auto;
  padding: 40px 10px;
- max-width: 800px;
+ max-width: 1100px;
 }
 
 .profile-image {
@@ -87,6 +90,16 @@ textarea {
     background-size: contain;
     background-position: center;
     position: relative;
+}
+
+.profile-image-badging {
+    position: absolute;
+    top: 0;
+    right: 35px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--light-primary);
+    border-radius: 50%;
 }
 
 .primary-button {
@@ -114,7 +127,7 @@ textarea {
 }
 
 .what-i-do {
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 20px;
@@ -128,6 +141,7 @@ textarea {
     box-shadow: 1px 1px 3px 4px #e7e7e7;
     cursor: pointer;
     transition: all 0.5s;
+    width: 30%;
 }
 
 .rounded-card:hover {
@@ -135,7 +149,7 @@ textarea {
 }
 
 .projects {
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 20px;
@@ -167,10 +181,27 @@ textarea {
 }
 
 @media screen and (max-width:480px) {
+    .nav_bar_mobile {
+        flex-direction: row !important;
+    }
+
     .flex_container {
         flex-direction: column;
         padding: 10px;
         align-items: center;
+    }
+
+    .info {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .intro-text {
+        width: unset;
+    }
+
+    .rounded-card {
+        width: 80%;
     }
 
     .contact-image {
