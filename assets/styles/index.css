@@ -2,6 +2,7 @@
     --primary: #0d42b5;
     --light-primary: 	#497bd9;
 }
+
 *{
     font-family: 'Montserrat', sans-serif;
 }
@@ -48,6 +49,7 @@ textarea {
 
 .flex_container {
     display: flex;
+    padding: 10px;
 }
 
 .justifier_navbar {
@@ -66,15 +68,15 @@ textarea {
     background-color: #e7e7e7;
 }
 
+.intro-text {
+    font-size: 14px; line-height: 20px; color: #434343;
+}
+
 .banner-container {
  align-items: center;
  margin: auto;
- padding: 40px 0;
+ padding: 40px 10px;
  max-width: 800px;
-}
-
-.info {
-
 }
 
 .profile-image {
@@ -84,6 +86,7 @@ textarea {
     background: url('../images/profile-picture.jpeg');
     background-size: contain;
     background-position: center;
+    position: relative;
 }
 
 .primary-button {
@@ -154,4 +157,32 @@ textarea {
 
 .contact-form {
     width: 500px;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width:480px) {
+    .flex_container {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .contact-image {
+        display: none;
+    }
+
+    .contact-form {
+        text-align: center;
+    }
+
+    table {
+        margin: auto;
+    }
+    
 }
