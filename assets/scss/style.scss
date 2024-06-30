@@ -1,0 +1,88 @@
+$color_1: var(--text-color);
+$color_2: var(--main-color);
+$color_3: var(--bg-color);
+$color_4: var(--snd-bg-color);
+$font-family_1: "Nunito", sans-serif;
+$background-color_1: var(--main-color);
+$background-color_2: var(--bg-color);
+
+@import "https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: $font-family_1;
+}
+
+:root {
+  --bg-color: #f4f4f9; /* Light gray background color */
+  --snd-bg-color: #e8e8ef; /* Slightly darker gray for secondary background */
+  --text-color: #333333; /* Dark gray text color */
+  --main-color: #4a90e2; /* Blue main color */
+}
+
+:root.dark-mode {
+  --bg-color: #191f36;
+  --snd-bg-color: #262840;
+  --text-color: #fff;
+  --main-color: #59b2f4;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-color);
+  color: $color_1;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+span {
+  color: $color_2;
+}
+
+.span {
+  color: $color_2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color: $background-color_1;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: $color_3;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+// Import components
+@import "components/header";
+@import "components/home";
+@import "components/about";
+@import "components/portfolio";
+@import "components/contact";
+@import "components/footer";
+@import "components/responsive";

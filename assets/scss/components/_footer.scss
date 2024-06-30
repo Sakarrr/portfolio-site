@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+}
+
+.footer-text {
+  font-size: 1.6rem;
+}
+
+.footer-iconTop {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background-color: $background-color_1;
+  border-radius: 0.8rem;
+  transition: 0.5s ease;
+
+  a {
+    &:hover {
+      box-shadow: 0 0 1rem var(--main-color);
+    }
+
+    i {
+      font-size: 2.4rem;
+      color: $color_4;
+    }
+  }
+}
