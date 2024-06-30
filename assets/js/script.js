@@ -1,3 +1,4 @@
+// JS to toggle menu on mobile view
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 
@@ -6,6 +7,7 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
 
+// JS to add active class on section within the viewport
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header navbar a");
 
@@ -34,6 +36,7 @@ window.onscroll = () => {
   navbar.classList.remove("active");
 };
 
+// JS to toggle theme between light and dark
 const toggleButton = document.getElementById("theme-toggle");
 const currentTheme = localStorage.getItem("theme")
   ? localStorage.getItem("theme")
